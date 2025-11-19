@@ -1,0 +1,9 @@
+---
+const { id, variant = 'default' } = Astro.props;
+const bgColor = variant === 'alternate' ? 'bg-gray-50 dark:bg-[#141C25]' : 'bg-white dark:bg-[#111921]';
+---
+<section id={id} class:list={["px-4 sm:px-6 lg:px-8 py-20 transition-colors", bgColor]}>
+    <div class="max-w-6xl w-full mx-auto">
+        <slot />
+    </div>
+</section>

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Configuración de dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colores personalizados */
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  
+  /* Backgrounds */
+  --color-background-light: #ffffff;
+  --color-background-dark: #111921;
+  --color-background-alternate: #141C25;
+  
+  /* Text colors */
+  --color-text-light: #1f2937;
+  --color-text-dark: #f9fafb;
+  --color-text-muted-light: #6b7280;
+  --color-text-muted-dark: #9ca3af;
+}
+
+/* Configuración base del HTML para dark mode */
+:root {
+  color-scheme: light dark;
+}
